@@ -1,0 +1,9 @@
+# ~/.tmuxinator/lh.yml
+# you can make as many tabs as you wish...
+
+project_name: lh
+project_root: /home/tom
+tabs:
+  - apt:
+  - vim: 
+  - journal: 

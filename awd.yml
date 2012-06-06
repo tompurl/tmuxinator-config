@@ -1,0 +1,12 @@
+# ~/.tmuxinator/awd.yml
+# you can make as many tabs as you wish...
+
+project_name: AWD
+project_root: ~/Dev/ruby/agile_web_development/work/depot
+rvm: 1.9.3
+tabs:
+  - editor: vim README.rdoc
+  - shell: git pull
+  - server: rails s
+  - logs: tail -f logs/development.log
+  - irb: rails c
