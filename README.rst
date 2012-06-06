@@ -9,7 +9,7 @@ My .tmuxinator Config
 Overview
 --------
 
-My tmux config + a few handy aliases + my .tmux.config
+My tmuxinator_ config + a few handy aliases + my .tmux.config
 
 Chances are, you don't want to use these files unless you're me :-)
 
@@ -28,7 +28,9 @@ you don't want to break you curren tmux or tmuxinator settings.
     # Install tmux using apt-get or whatever.
     # Install tmuxinator (https://github.com/aziz/tmuxinator)
     $ cd $HOME
-    $ git clone http://github.com/tompurl/tumuxinator.git
+    # Use the git read only url if you're not me.
+    $ mv .tmuxinator .tmuxinator.bkup
+    $ git clone git@github.com:tompurl/tmuxinator-config.git .tmuxinator
     $ ln -s $HOME/.tmuxinator/tmux.conf ~/.tmux.conf
     $ echo "source $HOME/.tmuxinator/aliases" >> ~/.bashrc
     $ echo "source $HOME/.tmuxinator/functions" >> ~/.bashrc
@@ -102,3 +104,7 @@ For more information, please see the ``functions`` and ``alises`` files.
 
     sd session_name
         Not yet implemented.
+
+.. links
+
+.. _tmuxinator: https://github.com/aziz/tmuxinator
