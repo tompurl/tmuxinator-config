@@ -8,5 +8,5 @@ tabs:
   - editor: vim TODO.wiki
   - shell: git pull
   - server: rails s
-  - logs: tail -f logs/development.log
+  - logs: tail -f log/development.log
   - console: rails c

@@ -1,0 +1,10 @@
+# ~/.tmuxinator/rspec-book.yml
+# you can make as many tabs as you wish...
+
+project_name: rspec-book
+project_root: ~/Dev/ruby/rspec-book
+rvm: jruby-1.6.7.2
+tabs:
+  - editor:
+  - shell: 
+  - irb: 

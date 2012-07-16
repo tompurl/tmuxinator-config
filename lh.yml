@@ -6,4 +6,7 @@ project_root: /home/tom
 tabs:
   - apt:
   - vim: 
-  - journal: 
+  - twitvim: vim
+  - todo.txt: 
+  - scratch:
+      number: 9

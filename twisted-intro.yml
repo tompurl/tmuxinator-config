@@ -1,0 +1,14 @@
+# ~/.tmuxinator/blog.yml
+# you can make as many tabs as you wish...
+
+project_name: twisted-intro
+project_root: ~/Dev/Python/twisted-intro
+tabs:
+  - editor:
+  - client-n-servers: 
+      layout: main-vertical
+      panes:
+        - #empty shell
+        - python blocking-server/slowpoetry.py --port 10000 poetry/ecstasy.txt --num-bytes 30
+        - python blocking-server/slowpoetry.py --port 10001 poetry/fascination.txt
+        - python blocking-server/slowpoetry.py --port 10002 poetry/science.txt

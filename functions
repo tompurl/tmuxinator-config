@@ -1,4 +1,2 @@
 #function killscreen() { screen -ls | grep $1 | awk '{print $1}' | cut -f1 -d. | xargs kill -9; screen -wipe; }
-function killscreen() { echo not implemented; }
-#function screenids() { ls $HOME/scrugar/profiles | grep -v "\~"; }
-function screenids() { echo not implemented; }
+function killscreen() { tmux kill-session -t $1 }

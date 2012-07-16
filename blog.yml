@@ -1,13 +1,9 @@
 # ~/.tmuxinator/blog.yml
 # you can make as many tabs as you wish...
 
-project_name: Blog
+project_name: blog
 project_root: ~/src/octopress
 rvm: 1.9.2
 tabs:
   - editor:
-      layout: main-vertical
-      panes:
-        - vim
-        - #empty, will just run plain bash
   - console: git pull

@@ -7,4 +7,4 @@ alias sa='mux $*'
 # Kill a tmux session
 alias sk='killscreen'
 # List all tmux config files in tugar
-alias si='screenids'
+alias si='tmuxinator ls'
