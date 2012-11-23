@@ -1,0 +1,12 @@
+# ~/.tmuxinator/lh.yml
+# you can make as many tabs as you wish...
+
+project_name: wideload
+project_root: /home/tom/Dropbox/Dev/Vagrant/wideload
+rvm: system
+tabs:
+  - editor:
+  - console: 
+  - vagrant: 
+  - docs: 
+  - scratch: 

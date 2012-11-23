@@ -1,0 +1,9 @@
+# ~/.tmuxinator/calliope.yml
+# you can make as many tabs as you wish...
+
+project_name: mperl
+project_root: ~/Dropbox/Dev/Perl/modern-perl
+tabs:
+  - editor: 
+  - shell: 
+  - server: 
