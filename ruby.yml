@@ -1,0 +1,12 @@
+# ~/.tmuxinator/ruby.yml
+# you can make as many tabs as you wish...
+
+project_name: Tmuxinator
+project_root: ~/Dropbox/Dev/Ruby/rspec-training/showtime
+rvm: jruby-1.6.7.2 
+tabs:
+  - editor: vim README.*
+  - shell: 
+  - server: rails s Puma
+  - logs: tail -f logs/development.log
+  - console: rails c

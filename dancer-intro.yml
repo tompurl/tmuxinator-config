@@ -1,0 +1,9 @@
+# ~/.tmuxinator/calliope.yml
+# you can make as many tabs as you wish...
+
+project_name: dintro
+project_root: ~/Dropbox/Dev/Perl/dancer-intro
+tabs:
+  - editor: 
+  - shell: 
+  - server: 

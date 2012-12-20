@@ -8,5 +8,9 @@ tabs:
   - vim: 
   - twitvim: vim
   - todo.txt: 
+  - offlineimap: flock -w 0 /tmp/offlineimap.flock offlineimap -q
+  - mutt: mutt
+  - newsbeuter: newsbeuter
+  - htop: htop
   - scratch:
       number: 9

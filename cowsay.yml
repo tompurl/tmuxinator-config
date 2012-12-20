@@ -1,0 +1,9 @@
+# ~/.tmuxinator/cowsay.yml
+# you can make as many tabs as you wish...
+
+project_name: cowsay
+project_root: ~/Dropbox/Dev/Ruby/cowsay
+rvm: 1.9.3
+tabs:
+  - editor:
+  - shell: 

@@ -1,2 +1,2 @@
 #function killscreen() { screen -ls | grep $1 | awk '{print $1}' | cut -f1 -d. | xargs kill -9; screen -wipe; }
-function killscreen() { tmux kill-session -t $1 }
+function killscreen() { tmux kill-session -t $1; }
