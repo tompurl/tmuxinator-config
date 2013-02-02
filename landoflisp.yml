@@ -1,0 +1,9 @@
+# ~/.tmuxinator/landoflisp.yml
+# you can make as many tabs as you wish...
+
+project_name: Landoflisp
+project_root: ~/Dropbox/Dev/CommonLisp/LandOfLisp
+rvm: 1.9.3
+tabs:
+  - editor: vim
+  - shell: 
