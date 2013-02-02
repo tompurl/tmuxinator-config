@@ -3,10 +3,11 @@
 
 project_name: calliope
 project_root: ~/Dev/ruby/calliope
-rvm: jruby-1.6.7.2
+rvm: jruby-1.7.1
 tabs:
   - editor: vim TODO.wiki
-  - shell: git pull
-  - server: rails s
+  - shell: 
+  - server: rails s Puma
   - logs: tail -f log/development.log
   - console: rails c
+  - database: 
