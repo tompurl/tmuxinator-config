@@ -1,14 +1,14 @@
 # ~/.tmuxinator/lh.yml
-# you can make as many tabs as you wish...
 
-project_name: lh
-project_root: /home/tom
-tabs:
-  - apt:
-  - journal: 
-  - twitvim: vim
-  - todo.txt: 
-  - mutt: mutt
+name: lh
+root: ~/
+
+windows:
+  - apt: all
+  - journal: vim
   - newsbeuter: newsbeuter
+  - ping: ping -i 60 www.google.com
+  - mutt: mutt
+    number: 7
   - scratch:
-      number: 9
+    number: 9

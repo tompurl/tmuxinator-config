@@ -1,10 +1,10 @@
 # ~/.tmuxinator/sockets_book.yml
 # you can make as many tabs as you wish...
 
-project_name: sockets book
-project_root: ~/Dropbox/Dev/Ruby/working-with-tcp-sockets
-rvm: 1.9.3
-tabs:
+name: sockets book
+root: ~/Dropbox/Dev/Ruby/working-with-tcp-sockets
+
+windows:
   - editor:
       layout: main-vertical
       panes:
