@@ -1,7 +1,7 @@
-# ~/.tmuxinator/lh.yml
+# ~/.tmuxinator/lice-app.yml
 
-name: lh
-root: ~/
+name: lice-app
+root: ~/Dev/lice_app
 
 # Optional tmux socket
 # socket_name: foo
@@ -10,7 +10,7 @@ root: ~/
 # pre: sudo /etc/rc.d/mysqld start
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+pre_window: source ~/Dev/lice_app/venv/bin/activate
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -28,9 +28,11 @@ root: ~/
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t lh
+# post: tmux -CC attach -t lice-app
 
 windows:
-  - kpcli: PATH=/usr/bin:$PATH ~/bin/kpcli-3.3.pl --kdb ~/Syncthing-Secret/Database.kdb --key ~/Desktop/keepass-cert
-  - syncthing: sudo sh -c 'echo 204800 > /proc/sys/fs/inotify/max_user_watches' && syncthing
-  - main: PATH=/usr/bin:$PATH emacsclient -create-frame --alternate-editor="" --no-wait
+  - main:
+      layout: main-vertical
+      panes:
+        - PATH=/usr/bin:$PATH emacsclient -create-frame --alternate-editor="" --no-wait ~/Dev/lice_app/README.md
+        - sudo docker-compose up
