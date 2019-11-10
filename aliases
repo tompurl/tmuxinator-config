@@ -3,7 +3,7 @@ alias sls='tmux ls'
 # Reattach to a session
 alias sr='tmux attach-session -t $*'
 # Add a new tmux session by name
-alias sa='mux $*'
+alias sa='tmuxinator $*'
 # Kill a tmux session
 alias sk='killscreen'
 # List all tmux config files in tugar
