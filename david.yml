@@ -1,0 +1,8 @@
+# ~/.tmuxinator/lh.yml
+
+name: david
+root: ~/
+
+windows:
+  - main: 
+  - chat: ./chat.sh
